@@ -127,5 +127,19 @@ check(test_input)
 check(input)
 
 
+
+check_1 <- function(vec){
+  index <- seq_along(vec)
+ sum(
+   diff(
+     na.omit(
+       vec[index+2] + vec[index+1] + vec[index]
+       )
+     ) >0
+   )
+}
+
+check_1(input)
+
 ```
 
