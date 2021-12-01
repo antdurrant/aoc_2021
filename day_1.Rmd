@@ -106,8 +106,6 @@ Consider sums of a three-measurement sliding window. How many sums are larger th
 
 
 ```{r}
-library(tidyverse)
-
 
 check <- function(input){
   sum(
